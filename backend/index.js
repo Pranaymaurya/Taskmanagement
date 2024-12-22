@@ -19,7 +19,7 @@ app.use(express.json()); // Built-in middleware to parse JSON request bodies
 app.use(express.urlencoded({ extended: true })); // Middleware to parse URL-encoded bodies
 
 // API routes
-app.use("/api/", router);
+app.use("/", router);
 
 // Set port from environment variable or default to 5000
 const PORT = process.env.PORT || 5000;
